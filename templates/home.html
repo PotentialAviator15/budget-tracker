@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %}Dashboard{% endblock %} {% block
+content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="alert alert-success">Total Income: ${{ income_total }}</div>
+  </div>
+  <div class="col-md-4">
+    <div class="alert alert-danger">Total Expenses: ${{ expense_total }}</div>
+  </div>
+  <div class="col-md-4">
+    <div class="alert alert-info">Balance: ${{ balance }}</div>
+  </div>
+</div>
+<a href="/add" class="btn btn-primary">Add Transaction</a>
+<a href="/transactions" class="btn btn-secondary">View Transactions</a>
+{% endblock %}
